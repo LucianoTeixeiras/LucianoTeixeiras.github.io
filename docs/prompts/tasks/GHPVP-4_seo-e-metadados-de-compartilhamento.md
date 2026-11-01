@@ -39,13 +39,15 @@ import re,json,xml.dom.minidom as m
 h=open('index.html',encoding='utf-8').read()
 for k in ('rel="canonical"','og:title','og:description','og:image','og:url','twitter:card'): assert k in h,k
 m.parse('sitemap.xml'); s=open('sitemap.xml',encoding='utf-8').read()
-n=len(re.findall('<loc>',s)); p=[x for x in json.load(open('projects/projects.json',encoding='utf-8'))]
+n=len(re.findall('<loc>',s)); p=[x for x in json.load(open('projects/projects.json',encoding='utf-8')) if not x['private']]
 assert n==1+len(p),(n,len(p))
+ld=re.findall(r'<script type="application/ld\+json">(.*?)</script>',h,re.S)
+assert len(ld)==1 and json.loads(ld[0])['@type']=='Person'
+assert not re.search(r'wa\.me|\+?55\d{9,}|@',ld[0]),'contato pessoal no JSON-LD'
 assert 'Sitemap:' in open('robots.txt').read()
 import os; assert os.path.getsize('assets/og-card.png')<300_000
 print('OK',n)
 PY
-grep -Eq '\+?55[0-9]{9,}|wa\.me' index.html && grep -c 'application/ld+json' index.html
 ```
 - [ ] Após o merge (GHPVP-5): `curl -I` de `/robots.txt`, `/sitemap.xml` e da imagem OG retorna 200.
 - [ ] JSON-LD não contém telefone/e-mail. [ ] Validação manual no Rich Results/LinkedIn Post Inspector anexada ao PR.
