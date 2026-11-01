@@ -147,28 +147,6 @@
     "transcript": ""
   },
   {
-    "slug": "m-leao-requisitos",
-    "title": "Plataforma de dados SAP → Medallion (M-Leão)",
-    "summary": "Projeto de engenharia de dados com extração SAP via Apache Hop para Parquet/GCS e tabelas externas (Bronze), transformações dbt na Silver, governança documentada e agentes de apoio.",
-    "stack": [
-      "Apache Hop",
-      "dbt",
-      "GCS",
-      "BigQuery",
-      "Medallion",
-      "SAP"
-    ],
-    "source_url": "",
-    "source_type": "repositório",
-    "repo_url": "",
-    "demo_url": "",
-    "date": "2026",
-    "status": "em andamento",
-    "private": true,
-    "how_to_run": "",
-    "transcript": ""
-  },
-  {
     "slug": "oracle-ai-vector-search-lab",
     "title": "Oracle AI Vector Search Lab",
     "summary": "Mini-laboratório de busca vetorial no Oracle (Docker local e Autonomous DB) com dados fictícios.",
