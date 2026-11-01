@@ -19,6 +19,36 @@ document.addEventListener("click", (e) => {
   if (e.target.closest(".lang")) {
     setLang(document.documentElement.dataset.lang === "en" ? "pt" : "en");
   }
+
+  // Menu mobile hambúrguer
+  const toggleBtn = e.target.closest(".nav-toggle");
+  const navMenu = document.querySelector(".nav-menu");
+
+  if (toggleBtn && navMenu) {
+    const isExpanded = toggleBtn.getAttribute("aria-expanded") === "true";
+    toggleBtn.setAttribute("aria-expanded", String(!isExpanded));
+    navMenu.classList.toggle("is-open");
+    return;
+  }
+
+  // Fechar menu mobile ao clicar em um link
+  if (e.target.closest(".nav-menu a") && navMenu) {
+    const btn = document.querySelector(".nav-toggle");
+    if (btn) btn.setAttribute("aria-expanded", "false");
+    navMenu.classList.remove("is-open");
+    return;
+  }
+
+  // Fechar menu ao clicar fora do cabeçalho
+  if (
+    navMenu &&
+    navMenu.classList.contains("is-open") &&
+    !e.target.closest("header.nav")
+  ) {
+    const btn = document.querySelector(".nav-toggle");
+    if (btn) btn.setAttribute("aria-expanded", "false");
+    navMenu.classList.remove("is-open");
+  }
 });
 
 const base = document.body.dataset.base || "";
