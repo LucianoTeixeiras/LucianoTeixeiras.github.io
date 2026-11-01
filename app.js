@@ -55,9 +55,19 @@ const base = document.body.dataset.base || "";
 
 async function loadProjects() {
   const r = await fetch(base + "projects/projects.json");
-  return (await r.json()).sort((a, b) =>
-    String(b.date).localeCompare(String(a.date))
-  );
+  const data = await r.json();
+  return data.sort((a, b) => {
+    // 1. Públicos primeiro, Privados depois
+    const aPriv = Boolean(a.private);
+    const bPriv = Boolean(b.private);
+    if (aPriv !== bPriv) {
+      return aPriv ? 1 : -1;
+    }
+    // 2. Ordem alfabética pelo título
+    return String(a.title || "").localeCompare(String(b.title || ""), "pt", {
+      sensitivity: "base",
+    });
+  });
 }
 
 const badge = (p) =>

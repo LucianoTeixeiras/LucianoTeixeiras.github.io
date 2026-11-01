@@ -83,7 +83,7 @@ git status
 ## ➕ Adicionar um Novo Projeto / Case Técnico
 
 1. Abra [projects/_TEMPLATE.json](projects/_TEMPLATE.json) e copie o bloco de exemplo.
-2. Cole no topo da lista em [projects/projects.json](projects/projects.json).
+2. Insira em [projects/projects.json](projects/projects.json) respeitando a convenção de ordenação (públicos primeiro, privados depois, ambos em ordem alfabética estrita por título).
 3. Preencha os campos estruturados:
    - `slug`: identificador único em formato kebab-case (ex: `meu-novo-agente`).
    - `title`: nome técnico do projeto.

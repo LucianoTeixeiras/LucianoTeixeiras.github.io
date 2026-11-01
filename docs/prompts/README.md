@@ -23,6 +23,7 @@ Cada documento espelha fielmente a respectiva issue do Jira Cloud no projeto **`
 | **GHPVP-4** | Backlog | Filho de GHPVP-1 | [`tasks/GHPVP-4_seo-e-metadados-de-compartilhamento.md`](tasks/GHPVP-4_seo-e-metadados-de-compartilhamento.md) | SEO e metadados de compartilhamento |
 | **GHPVP-5** | Backlog | Sucessora de GHPVP-2..4 | [`tasks/GHPVP-5_verificacao-de-publicacao-no-github-pages.md`](tasks/GHPVP-5_verificacao-de-publicacao-no-github-pages.md) | Verificação de publicação no GitHub Pages |
 | **GHPVP-6** | Backlog | Sucessora de GHPVP-2 | [`tasks/GHPVP-6_inventario-e-revisao-periodica-de-links.md`](tasks/GHPVP-6_inventario-e-revisao-periodica-de-links.md) | Inventário e revisão periódica de links |
+| **GHPVP-7** | Backlog | Refinamento de UX/Catálogo | [`tasks/GHPVP-7_ordenacao-do-catalogo-por-visibilidade-e-ordem-alfabetica.md`](tasks/GHPVP-7_ordenacao-do-catalogo-por-visibilidade-e-ordem-alfabetica.md) | Ordenação do catálogo: públicos primeiro, depois privados e ordem alfabética |
 
 ---
 
