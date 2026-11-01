@@ -1,0 +1,7 @@
+# >>> agent-kit (nao versionar artefatos sincronizados; ver agent-kit) >>>
+.agent-kit/
+.agent-kit/runtime/
+.github/agents/
+.antigravity/
+.secrets/
+# <<< agent-kit <<<
