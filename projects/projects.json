@@ -1,5 +1,56 @@
 [
   {
+    "slug": "tutorai",
+    "title": "TutorAI — Plataforma Agêntica de Tutoria",
+    "summary": "Ecossistema autônomo de tutoria e diagnóstico para vestibulandos com LangGraph: nó supervisor roteador, 11 agentes especialistas (Exatas com execução de código, Humanas com RAG de 15 anos de provas e sub-grafo colaborativo de Redação), persistência de sessão e eventos em PostgreSQL, gateway N8N (Queue Mode + Redis) integrado à Evolution API do WhatsApp, app Flutter e analytics de proficiência com dbt.",
+    "stack": [
+      "Python",
+      "LangGraph",
+      "FastAPI",
+      "PostgreSQL",
+      "MCP",
+      "RAG",
+      "N8N",
+      "WhatsApp",
+      "Flutter",
+      "uv"
+    ],
+    "source_url": "",
+    "source_type": "repositório",
+    "repo_url": "",
+    "demo_url": "",
+    "date": "2026-11",
+    "status": "ativo",
+    "private": true,
+    "how_to_run": "uv sync\nuv run pytest\n./start-demo.ps1",
+    "transcript": ""
+  },
+  {
+    "slug": "ta-na-lista",
+    "title": "Tá na Lista — SmartCoupon AI",
+    "summary": "Plataforma inteligente de mantimentos domésticos e controle de despesas familiares: extração multimodal via Visão Computacional de cupons térmicos (NFC-e/SAT) e notas manuscritas, determinismo contábil via Pydantic (validação estrita de totais) e engenharia de dados em arquitetura Medallion (Bronze: payloads brutos; Silver: itens padronizados; Gold: comparativo e inflação pessoal) com FastAPI, React e Flutter.",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "Gemini Multimodal",
+      "Pydantic",
+      "Arquitetura Medallion",
+      "Flutter",
+      "React",
+      "SQLite",
+      "uv"
+    ],
+    "source_url": "",
+    "source_type": "repositório",
+    "repo_url": "",
+    "demo_url": "",
+    "date": "2026-11",
+    "status": "MVP",
+    "private": true,
+    "how_to_run": "docker-compose up -d\nuv run uvicorn backend.main:app",
+    "transcript": ""
+  },
+  {
     "slug": "agents2ai-data-copilot",
     "title": "Agents2AI Data Copilot",
     "summary": "Perguntas em linguagem natural sobre planilhas e BigQuery com respostas auditáveis: todo número vem de SQL determinístico (DuckDB somente leitura), com metadados dbt como contexto e eval set no CI.",
