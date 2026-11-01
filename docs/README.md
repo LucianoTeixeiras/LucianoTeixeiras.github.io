@@ -13,6 +13,10 @@ Em conformidade com a governança da frota, a pasta `docs/` organiza a documenta
 ```text
 docs/
 ├── README.md                  # Este índice geral do acervo documental
+├── prompts/                   # Catálogo de Prompts Canônicos espelhando o Jira GHPVP
+│   ├── README.md              # Índice mestre com matrizes Épicos x Tasks
+│   ├── epicos/                # Prompts de Arquitetura (Jira Epics)
+│   └── tasks/                 # Ordens de Serviço Autônomas (Jira Tasks)
 ├── reports/                   # Relatórios executivos e técnicos datados (YYYYMM/DD/)
 │   └── 202611/
 │       └── 01/                # Relatórios técnicos do dia 01/11/2026
@@ -27,6 +31,7 @@ docs/
 
 | Categoria | Natureza | Descrição no Repositório |
 | :--- | :---: | :--- |
+| `prompts/` | Perene | Catálogo de Prompts Canônicos espelhando o Jira Cloud (Issue-as-a-Prompt). |
 | `reports/` | Periódica (`YYYYMM/DD/`) | Relatórios técnicos de entregas, fechamento de turnos e auditorias de conformidade. |
 | `runbooks/` | Perene | Procedimentos operacionais para manutenção do portfólio, atualização de cases e deploy. |
 | `decisions/` | Periódica (`YYYYMM/DD/`) | Registros de Decisão Arquitetural (ADRs) sobre stacks, design system e integrações. |
