@@ -1,0 +1,190 @@
+[
+  {
+    "slug": "agents2ai-data-copilot",
+    "title": "Agents2AI Data Copilot",
+    "summary": "Perguntas em linguagem natural sobre planilhas e BigQuery com respostas auditáveis: todo número vem de SQL determinístico (DuckDB somente leitura), com metadados dbt como contexto e eval set no CI.",
+    "stack": [
+      "Python",
+      "Pydantic AI",
+      "DuckDB",
+      "BigQuery",
+      "dbt",
+      "FastAPI",
+      "Next.js",
+      "Ollama"
+    ],
+    "source_url": "",
+    "source_type": "repositório",
+    "repo_url": "",
+    "demo_url": "",
+    "date": "2026-10",
+    "status": "MVP",
+    "private": true,
+    "how_to_run": "",
+    "transcript": ""
+  },
+  {
+    "slug": "agents2ai-langgraph-showcase",
+    "title": "Agente NL→SQL com LangGraph",
+    "summary": "Agente de analytics em linguagem natural → SQL sobre dados públicos (DuckDB + BigQuery public datasets), com estado tipado, human-in-the-loop, guardrails, evals e tracing.",
+    "stack": [
+      "Python",
+      "LangGraph",
+      "sqlglot",
+      "DuckDB",
+      "BigQuery",
+      "OpenRouter"
+    ],
+    "source_url": "",
+    "source_type": "repositório",
+    "repo_url": "https://github.com/LucianoTeixeiras/agents2ai-langgraph-showcase",
+    "demo_url": "",
+    "date": "2026",
+    "status": "planejamento",
+    "private": false,
+    "how_to_run": "uv sync --group dev\nuv run ruff check .\nuv run pytest -q",
+    "transcript": ""
+  },
+  {
+    "slug": "agents2ai-llamaindex-showcase",
+    "title": "Copilot RAG multimodal com LlamaIndex",
+    "summary": "RAG multimodal (PDF, DOCX, PPTX, XLSX, imagens) + NL→SQL com guardrail sobre dados públicos, rodando localmente com SLM via Ollama.",
+    "stack": [
+      "Python",
+      "LlamaIndex",
+      "Ollama",
+      "DuckDB vss",
+      "sqlglot"
+    ],
+    "source_url": "",
+    "source_type": "repositório",
+    "repo_url": "https://github.com/LucianoTeixeiras/agents2ai-llamaindex-showcase",
+    "demo_url": "",
+    "date": "2026",
+    "status": "planejamento",
+    "private": false,
+    "how_to_run": "uv sync --group dev\nuv run ruff check .\nuv run pytest -q",
+    "transcript": ""
+  },
+  {
+    "slug": "agent-linkedin-writer",
+    "title": "LKDAI — Agente de produção de artigos",
+    "summary": "Pipeline multiagente determinístico (curadoria de pauta, pesquisa com grounding via NotebookLM MCP, redação, revisão e direção visual) que gera artigos, infográficos e vídeos para o LinkedIn.",
+    "stack": [
+      "Python",
+      "Multi-agent",
+      "MCP",
+      "NotebookLM",
+      "Mermaid"
+    ],
+    "source_url": "",
+    "source_type": "repositório",
+    "repo_url": "",
+    "demo_url": "",
+    "date": "2026",
+    "status": "em uso",
+    "private": true,
+    "how_to_run": "",
+    "transcript": ""
+  },
+  {
+    "slug": "radar-americas-agentes",
+    "title": "Radar das Américas — agentes",
+    "summary": "Pipeline multiagente em LangGraph do Radar das Américas (projeto Agents2AI): schemas Pydantic, checagem de atribuição e adaptadores de canal; nada é publicado sem aprovação humana.",
+    "stack": [
+      "Python",
+      "LangGraph",
+      "Pydantic"
+    ],
+    "source_url": "",
+    "source_type": "repositório",
+    "repo_url": "https://github.com/LucianoTeixeiras/radar-americas-agentes",
+    "demo_url": "",
+    "date": "2026",
+    "status": "ativo",
+    "private": false,
+    "how_to_run": "",
+    "transcript": ""
+  },
+  {
+    "slug": "vigiagov",
+    "title": "VigiaGov",
+    "summary": "Auditoria cívica dos gastos públicos federais: ingestão de dados abertos da CGU em Parquet, camada analítica DuckDB e malhas de detecção (cartões corporativos, emendas, fornecedores sancionados, fracionamento).",
+    "stack": [
+      "Python",
+      "uv",
+      "DuckDB",
+      "Parquet",
+      "Dados abertos"
+    ],
+    "source_url": "",
+    "source_type": "repositório",
+    "repo_url": "https://github.com/LucianoTeixeiras/vigiagov",
+    "demo_url": "",
+    "date": "2026",
+    "status": "ativo",
+    "private": false,
+    "how_to_run": "",
+    "transcript": ""
+  },
+  {
+    "slug": "agent-kit",
+    "title": "agent-kit — frota de agentes especialistas",
+    "summary": "Kit de agentes especialistas (Data Architect, Data Engineer, QA, DevOps, ML Engineer e outros) com personas e stacks canônicas, governança e integração com múltiplos ambientes de desenvolvimento.",
+    "stack": [
+      "Multi-agent",
+      "AI-assisted engineering",
+      "Governança"
+    ],
+    "source_url": "",
+    "source_type": "repositório",
+    "repo_url": "",
+    "demo_url": "",
+    "date": "2026",
+    "status": "em uso",
+    "private": true,
+    "how_to_run": "",
+    "transcript": ""
+  },
+  {
+    "slug": "m-leao-requisitos",
+    "title": "Plataforma de dados SAP → Medallion (M-Leão)",
+    "summary": "Projeto de engenharia de dados com extração SAP via Apache Hop para Parquet/GCS e tabelas externas (Bronze), transformações dbt na Silver, governança documentada e agentes de apoio.",
+    "stack": [
+      "Apache Hop",
+      "dbt",
+      "GCS",
+      "BigQuery",
+      "Medallion",
+      "SAP"
+    ],
+    "source_url": "",
+    "source_type": "repositório",
+    "repo_url": "",
+    "demo_url": "",
+    "date": "2026",
+    "status": "em andamento",
+    "private": true,
+    "how_to_run": "",
+    "transcript": ""
+  },
+  {
+    "slug": "oracle-ai-vector-search-lab",
+    "title": "Oracle AI Vector Search Lab",
+    "summary": "Mini-laboratório de busca vetorial no Oracle (Docker local e Autonomous DB) com dados fictícios.",
+    "stack": [
+      "Oracle",
+      "Vector Search",
+      "Docker"
+    ],
+    "source_url": "",
+    "source_type": "repositório",
+    "repo_url": "https://github.com/LucianoTeixeiras/oracle-ai-vector-search-lab",
+    "demo_url": "",
+    "date": "2026",
+    "status": "lab",
+    "private": false,
+    "how_to_run": "",
+    "transcript": ""
+  }
+]
